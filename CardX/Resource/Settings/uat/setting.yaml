@@ -1,0 +1,17 @@
+timeout:
+  page:    60s
+  element:    5s
+  timeout: 30s
+
+url:
+  CardX:    https://www.cardx.co.th/
+
+text:
+  redtext: วงเงินทั้งหมดจะต้องไม่เกิน 3 เท่าของรายได้ต่อเดือนและไม่เกิน 37,000 บาท
+
+
+  error:
+    code:
+      Err001:
+        name:    Error001
+        message:    serverdown
