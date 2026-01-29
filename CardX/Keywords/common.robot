@@ -4,10 +4,8 @@ Open CardX website
 
 Cookie acception
     [Arguments]    ${locator}    ${timeouts}=${timeout.timeout}
-    ${status} =    Run keyword and return status    Wait until element is visible    ${locator}    ${timeouts}
-    IF    ${status}
-        SeleniumLibrary.Click element    ${locator}
-    END
+    SeleniumLibrary.Wait until element is visible    ${locator}    ${timeouts}
+    SeleniumLibrary.Click element    ${locator}
 
 Click element when ready
     [Arguments]    ${locator}    ${timeouts}=${timeout.timeout}
@@ -33,4 +31,6 @@ Verify redtext message
 Default test teardown
     SeleniumLibrary.Capture page screenshot
     SeleniumLibrary.Close browser
+
+
 

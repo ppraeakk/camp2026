@@ -1,6 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../common.robot
-
 *** Keywords ***
 Select career
     common.Click element when ready    ${loan_cal_locator.ddl_ChooseCareer}

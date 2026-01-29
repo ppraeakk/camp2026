@@ -13,4 +13,3 @@ Verify red text notification
     home_page.Click loan cal button
     loan_calculate_feature.Fill loan calculation data    ${TC001.MonthlyIncome}    ${TC001.CreditLimit}
     loan_cal_page.Verify red massage display
-    BuiltIn.sleep    3s

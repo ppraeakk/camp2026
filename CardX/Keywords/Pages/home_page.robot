@@ -1,6 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../common.robot
-
 *** Keywords ***
 Click accept cookie
     common.Cookie acception    ${home_locator.btn_cookie_accept}
