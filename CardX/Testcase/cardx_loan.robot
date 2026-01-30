@@ -7,9 +7,9 @@ Documentation    loan calaulation
 Library    String
 
 *** Test Cases ***
-Verify red text notification
+Verify red text warning result
     [Documentation]    loan calaulation
     home_page.Click accept cookie
     home_page.Click loan cal button
     loan_calculate_feature.Fill loan calculation data    ${TC001.MonthlyIncome}    ${TC001.CreditLimit}
-    loan_cal_page.Verify red massage display
+    loan_cal_page.Verify red text warning

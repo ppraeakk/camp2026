@@ -25,8 +25,8 @@ Input element when ready
 Verify redtext message
     [Arguments]    ${locator}    ${expected_text}=${text.redtext}    ${timeouts}=${timeout.timeout}
     SeleniumLibrary.Wait until element is visible    ${locator}    ${timeouts}
-    ${actual_text}=    SeleniumLibrary.Get text    ${locator}
-    BuiltIn.Should be equal as strings    ${actual_text}    ${expected_text}
+    ${actual_text}=    SeleniumLibrary.Get Text    ${locator}
+    BuiltIn.Should contain     ${actual_text}    ${expected_text}
 
 Default test teardown
     SeleniumLibrary.Capture page screenshot

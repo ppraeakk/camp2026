@@ -21,5 +21,5 @@ Input credit limit
     common.Clear textbox    ${loan_cal_locator.txt_creditlimit}
     common.Input element when ready    ${loan_cal_locator.txt_creditlimit}    ${CreditData}
 
-Verify red massage display
+Verify red text warning
     common.Verify redtext message    ${loan_cal_locator.txt_redmassage}
